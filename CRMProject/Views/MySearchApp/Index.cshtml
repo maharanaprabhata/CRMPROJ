@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/MyApp.cshtml";
+}
+
+<div class="container-fluid text-center">
+    <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 table-bordered">
+            <ul>
+                <li>Config Setting</li>
+            </ul>
+        </div>
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 table-bordered">
+            @for (int i = 0; i < 5; i++)
+            {
+                <div class="row text-center">
+                    @for (int k = 0; k < 4; k++)
+                    {
+                        <div class="col-sm-3">
+                            <div class="thumbnail">
+                                <img src="~/Contents/Image/lenovo.jpg" alt="Paris">
+                                <p><strong>Paris</strong></p>
+                                <p>Yes, we built Paris</p>
+                                <p>
+                                    @for (int j = 0; j < 5; j++)
+                                    {
+                                        <span class="glyphicon glyphicon-star-empty"></span>
+                                    }
+                                </p>
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
